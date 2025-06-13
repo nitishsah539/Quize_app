@@ -1,0 +1,38 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    rel="stylesheet"/>
+</head>
+<body>
+  <main>
+    <header class="top-bar">
+      <i class="fa-solid fa-sun"></i>
+      <div class="toggle" onclick="toggleTheme()">
+        <div class="circle"></div>
+      </div>
+      <i class="fa-solid fa-moon"></i>
+    </header><section class="left-section">
+  <h2>Welcome to the <span>Frontend Quiz!</span></h2>
+  <p>Pick a subject to get started</p>
+</section>
+
+<section class="right-section">
+  <button onclick="startQuiz('HTML')"><i class="fa-solid fa-code"></i> HTML</button>
+  <button onclick="startQuiz('CSS')"><i class="fa-brands fa-css3-alt"></i> CSS</button>
+  <button onclick="startQuiz('JavaScript')"><i class="fa-brands fa-js"></i> JavaScript</button>
+  <button onclick="startQuiz('Accessibility')"><i class="fa-solid fa-universal-access"></i> Accessibility</button>
+</section>
+
+  </main>  <div id="quizBox" class="quiz-box">
+    <h3 id="subjectTitle">Quiz</h3>
+    <div id="questionsContainer"></div>
+    <button onclick="closeQuiz()">Close</button>
+  </div> 
+   <script src="script.js"></script>
+  </body>
+</html>
